@@ -8,11 +8,17 @@ window.addEventListener('load', () => {
   const agent = {
     firstName: "James",
     lastName: "Bond",
-    code: "007",
+    code: "008",
     age: 57
   };
 
   displayAgentInfo(agent);
 });
 
-// Ce code affiche les informations d'un agent sur la page.
+// The `window.addEventListener('load', ...)` ensures the script runs after the page fully loads.
+// The `displayAgentInfo` function is defined to handle the agent's data.
+// The agent's properties (firstName, lastName, code, age) are extracted using destructuring.
+// A string containing the agent's details is created and stored in `infoText`.
+// The text content of the paragraph in the #container element is updated with `infoText`.
+// The `agent` object is created with predefined data for James Bond.
+// `displayAgentInfo(agent)` is called to display the agent's information on the page.
