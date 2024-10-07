@@ -28,4 +28,4 @@ function showLicensePlates(agent) {
 // Logs an error message and exits if there are no license plates.
 // Creates a new unordered list element for displaying license plates.
 // Iterates through the license plates and adds each as a list item.
-// Appends the list of license plates to the document body.​⬤
+// Appends the list of license plates to the document body.​
