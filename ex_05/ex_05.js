@@ -6,7 +6,9 @@ const car = {
   logInfo() {
     console.log(`Car information: ${this.color}, ${this.model}, ${this.brand}`);
   }
-};
+}; 
+// Defines a car object with properties: brand, model, color, and power.
+// Includes a method logInfo to display car information in the console.
 
 const agent = {
   firstName: "James",
@@ -18,17 +20,7 @@ const agent = {
     console.log(`Agent information: ${this.firstName} ${this.lastName}, ${this.code}, ${this.age}`);
     this.car.logInfo();
   }
-};
-
-/*
-  - Objet `car` :
-    - Contient les informations sur la voiture (marque, modèle, couleur, puissance).
-    - Méthode `logInfo()` pour afficher les informations de la voiture dans la console.
-
-  - Objet `agent` :
-    - Contient les informations sur l'agent (prénom, nom, code, âge).
-    - Propriété `car` qui est un lien vers l'objet `car`.
-    - Méthode `logInfo()` pour afficher les informations de l'agent dans la console.
-    - Appelle également la méthode `logInfo()` de la voiture pour afficher les informations de la voiture associée à l'agent.
-*/
-
+}; 
+// Defines an agent object with properties: firstName, lastName, code, and age.
+// Associates the car object with the agent.
+// Includes a method logInfo to display agent information and call the car's logInfo method.
