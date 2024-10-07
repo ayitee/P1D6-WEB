@@ -38,12 +38,19 @@ document.getElementById('search-button').addEventListener('click', function() {
     const matchingCars = searchCars(agents, key, value);
     displayResults(matchingCars);
 });
+// Adds a click event listener to the search button.
+// Retrieves the search key and value from the input fields.
+// Alerts the user if the search value is empty.
+// Defines a sample agents array with agent and car data.
 
 function searchCars(agents, key, value) {
     return agents
         .filter(agent => agent.car && agent.car[key] && agent.car[key].toLowerCase() === value)
         .map(agent => agent.car);
-}
+} 
+// Filters the agents array for those with a car matching the specified key and value.
+// Ensures case-insensitive matching by converting the value to lowercase.
+// Returns an array of matching car objects.
 
 function displayResults(cars) {
     const resultsList = document.getElementById('results-list');
@@ -58,5 +65,8 @@ function displayResults(cars) {
             resultsList.appendChild(listItem);
         });
     }
-}
-
+} 
+// Clears the results list before displaying new results.
+// Checks if there are no matching cars and displays a message if so.
+// Iterates through the array of matching cars and creates list items for each.
+// Appends the list items to the results list in the document.
