@@ -15,6 +15,8 @@ window.addEventListener('load', () => {
   displayAgentInfo(agent);
 });
 
+
+// ABZEORINFELDKSJDFLEGRKDHFKJEGLDJFGKJDLFKJJLKJKJL
 // The `window.addEventListener('load', ...)` ensures the script runs after the page fully loads.
 // The `displayAgentInfo` function is defined to handle the agent's data.
 // The agent's properties (firstName, lastName, code, age) are extracted using destructuring.
